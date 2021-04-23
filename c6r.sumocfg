@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 10/30/20 09:59:06 by Eclipse SUMO GUI Version 1.7.0
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\Dirtywork\WC\Project\c6r.net.xml"/>
+        <route-files value="D:\Dirtywork\WC\Project\routes.xml"/>
+        <additional-files value="C:\Users\harsh\Sumo\2020-10-30-09-57-25\osm.poly.xml"/>
+    </input>
+    
+    <time>
+         <begin value="0"/>
+         <end value="200"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="180"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\harsh\Sumo\2020-10-30-09-57-25\osm.view.xml"/>
+    </gui_only>
+
+</configuration>

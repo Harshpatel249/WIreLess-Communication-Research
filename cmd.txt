@@ -1,0 +1,8 @@
+netconvert --osm-files map.osm -o c6r.net.xml
+
+randomTrips.py -n c6r.net.xml -o flows.xml --begin 0 --end 1 \ --flows 100 --jtrrouter \ --trip-attributes 'departPos="random"departSpeed="max"'
+
+jtrrouter -c manhattan.jtrrcfg
+
+sumo.exe -c c6r.sumocfg --fcd-output c6r.xml --fcd-output.geo true --netstate-dump c6rs.net.xml
+
